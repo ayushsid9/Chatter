@@ -20,10 +20,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://chatter-frontend.onrender.com",
+    origin: "https://chatter-1-fz0j.onrender.com",
     credentials: true,
   })
 );
+
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
